@@ -123,7 +123,7 @@
 				France: {
 					url: '//{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 25,
+						maxZoom: 20,
 						attribution: '&copy; Openstreetmap France | {attribution.OpenStreetMap}'
 					}
 				},
@@ -172,7 +172,7 @@
 				SpinalMap: {
 					options: {
 						variant: 'spinal-map',
-						maxZoom: 11
+						maxZoom: 25
 					}
 				},
 				Landscape: 'landscape',
@@ -183,7 +183,7 @@
 		OpenMapSurfer: {
 			url: 'http://korona.geog.uni-heidelberg.de/tiles/{variant}/x={x}&y={y}&z={z}',
 			options: {
-				maxZoom: 25,
+				maxZoom: 20,
 				variant: 'roads',
 				attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data {attribution.OpenStreetMap}'
 			},
@@ -233,7 +233,7 @@
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
 				minZoom: 0,
-				maxZoom: 25,
+				maxZoom: 20,
 				variant: 'toner',
 				ext: 'png'
 			},
@@ -292,15 +292,15 @@
 					options: {
 						attribution:
 							'{attribution.Esri} &mdash; ' +
-							'Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2512'
+							'Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
 					}
 				},
 				DeLorme: {
 					options: {
 						variant: 'Specialty/DeLorme_World_Base_Map',
 						minZoom: 1,
-						maxZoom: 11,
-						attribution: '{attribution.Esri} &mdash; Copyright: &copy;2512 DeLorme'
+						maxZoom: 25,
+						attribution: '{attribution.Esri} &mdash; Copyright: &copy;2012 DeLorme'
 					}
 				},
 				WorldTopoMap: {
@@ -322,7 +322,7 @@
 				WorldTerrain: {
 					options: {
 						variant: 'World_Terrain_Base',
-						maxZoom: 13,
+						maxZoom: 25,
 						attribution:
 							'{attribution.Esri} &mdash; ' +
 							'Source: USGS, Esri, TANA, DeLorme, and NPS'
@@ -331,7 +331,7 @@
 				WorldShadedRelief: {
 					options: {
 						variant: 'World_Shaded_Relief',
-						maxZoom: 13,
+						maxZoom: 25,
 						attribution: '{attribution.Esri} &mdash; Source: Esri'
 					}
 				},
@@ -345,7 +345,7 @@
 				OceanBasemap: {
 					options: {
 						variant: 'Ocean_Basemap',
-						maxZoom: 13,
+						maxZoom: 25,
 						attribution: '{attribution.Esri} &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
 					}
 				},
@@ -402,14 +402,14 @@
 				'app_id={app_id}&app_code={app_code}&lg={language}',
 			options: {
 				attribution:
-					'Map &copy; 2587-2514 <a href="http://developer.here.com">HERE</a>',
+					'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
 				subdomains: '1234',
 				mapID: 'newest',
 				'app_id': '<insert your app_id here>',
 				'app_code': '<insert your app_code here>',
 				base: 'base',
 				variant: 'normal.day',
-				maxZoom: 25,
+				maxZoom: 20,
 				type: 'maptile',
 				language: 'eng',
 				format: 'png8',
@@ -486,7 +486,7 @@
 				minZoom: 8,
 				maxZoom: 25,
 				subdomains: '1234',
-				bounds: [[47.254642, 15.996093], [49.830896, 22.576904]],
+				bounds: [[47.204642, 15.996093], [49.830896, 22.576904]],
 				attribution:
 					'{attribution.OpenStreetMap}, vizualization CC-By-SA 2.0 <a href="http://freemap.sk">Freemap.sk</a>'
 			}
@@ -527,7 +527,7 @@
 				HikeBike: {},
 				HillShading: {
 					options: {
-						maxZoom: 15,
+						maxZoom: 25,
 						variant: 'hillshading'
 					}
 				}
@@ -540,7 +540,7 @@
 				attribution: 'Datenquelle: <a href="www.basemap.at">basemap.at</a>',
 				subdomains: ['', '1', '2', '3', '4'],
 				format: 'png',
-				bounds: [[46.358770, 8.782379], [49.037872, 25.259532]],
+				bounds: [[46.358770, 8.782379], [49.037872, 17.189532]],
 				variant: 'geolandbasemap'
 			},
 			variants: {
@@ -567,7 +567,7 @@
 				attribution:
 					'Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System ' +
 					'(<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.',
-				bounds: [[-85.0511287776, -259.999999975], [85.0511287776, 259.999999975]],
+				bounds: [[-85.0511287776, -179.999999975], [85.0511287776, 179.999999975]],
 				minZoom: 1,
 				maxZoom: 9,
 				format: 'jpg',
@@ -577,9 +577,9 @@
 			variants: {
 				ModisTerraTrueColorCR: 'MODIS_Terra_CorrectedReflectance_TrueColor',
 				ModisTerraBands367CR: 'MODIS_Terra_CorrectedReflectance_Bands367',
-				ViirsEarthAtNight2512: {
+				ViirsEarthAtNight2012: {
 					options: {
-						variant: 'VIIRS_CityLights_2512',
+						variant: 'VIIRS_CityLights_2012',
 						maxZoom: 8
 					}
 				},
@@ -622,10 +622,10 @@
 			// http://maps.nls.uk/projects/api/index.html
 			// Please contact NLS for anything other than non-commercial low volume usage
 			//
-			// Map sources: Ordnance Survey 1:1m to 1:63K, 2525s-2540s
+			// Map sources: Ordnance Survey 1:1m to 1:63K, 1920s-1940s
 			//   z0-9  - 1:1m
 			//  z10-11 - quarter inch (1:253440)
-			//  z12-25 - one inch (1:63360)
+			//  z12-18 - one inch (1:63360)
 			url: '//nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg',
 			options: {
 				attribution: '<a href="http://geo.nls.uk/maps/">National Library of Scotland Historic Maps</a>',
