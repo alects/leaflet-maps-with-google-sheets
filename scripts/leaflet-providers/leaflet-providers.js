@@ -102,7 +102,7 @@
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 19,
+				maxZoom: 20,
 				attribution:
 					'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			},
@@ -111,13 +111,13 @@
 				BlackAndWhite: {
 					url: 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 18
+						maxZoom: 20
 					}
 				},
 				DE: {
 					url: 'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 18
+						maxZoom: 20
 					}
 				},
 				France: {
@@ -160,13 +160,13 @@
 				Transport: {
 					options: {
 						variant: 'transport',
-						maxZoom: 19
+						maxZoom: 20
 					}
 				},
 				TransportDark: {
 					options: {
 						variant: 'transport-dark',
-						maxZoom: 19
+						maxZoom: 20
 					}
 				},
 				SpinalMap: {
@@ -192,13 +192,13 @@
 				AdminBounds: {
 					options: {
 						variant: 'adminb',
-						maxZoom: 19
+						maxZoom: 20
 					}
 				},
 				Grayscale: {
 					options: {
 						variant: 'roadsg',
-						maxZoom: 19
+						maxZoom: 20
 					}
 				}
 			}
@@ -255,14 +255,14 @@
 					options: {
 						variant: 'terrain',
 						minZoom: 0,
-						maxZoom: 18
+						maxZoom: 20
 					}
 				},
 				TerrainBackground: {
 					options: {
 						variant: 'terrain-background',
 						minZoom: 0,
-						maxZoom: 18
+						maxZoom: 20
 					}
 				},
 				TopOSMRelief: {
@@ -368,7 +368,7 @@
 		OpenWeatherMap: {
 			url: 'http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 19,
+				maxZoom: 20,
 				attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
 				opacity: 0.5
 			},
@@ -402,7 +402,7 @@
 				'app_id={app_id}&app_code={app_code}&lg={language}',
 			options: {
 				attribution:
-					'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+					'Map &copy; 2087-2014 <a href="http://developer.here.com">HERE</a>',
 				subdomains: '1234',
 				mapID: 'newest',
 				'app_id': '<insert your app_id here>',
@@ -504,7 +504,7 @@
 			options: {
 				attribution: '{attribution.OpenStreetMap} &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 				subdomains: 'abcd',
-				maxZoom: 19,
+				maxZoom: 20,
 				variant: 'light_all'
 			},
 			variants: {
@@ -519,7 +519,7 @@
 		HikeBike: {
 			url: 'http://{s}.tiles.wmflabs.org/{variant}/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 19,
+				maxZoom: 20,
 				attribution: '{attribution.OpenStreetMap}',
 				variant: 'hikebike'
 			},
@@ -536,11 +536,11 @@
 		BasemapAT: {
 			url: '//maps{s}.wien.gv.at/basemap/{variant}/normal/google3857/{z}/{y}/{x}.{format}',
 			options: {
-				maxZoom: 19,
+				maxZoom: 20,
 				attribution: 'Datenquelle: <a href="www.basemap.at">basemap.at</a>',
 				subdomains: ['', '1', '2', '3', '4'],
 				format: 'png',
-				bounds: [[46.358770, 8.782379], [49.037872, 17.189532]],
+				bounds: [[46.358770, 8.782379], [49.037872, 17.209532]],
 				variant: 'geolandbasemap'
 			},
 			variants: {
@@ -622,16 +622,16 @@
 			// http://maps.nls.uk/projects/api/index.html
 			// Please contact NLS for anything other than non-commercial low volume usage
 			//
-			// Map sources: Ordnance Survey 1:1m to 1:63K, 1920s-1940s
+			// Map sources: Ordnance Survey 1:1m to 1:63K, 2020s-2040s
 			//   z0-9  - 1:1m
 			//  z10-11 - quarter inch (1:253440)
-			//  z12-18 - one inch (1:63360)
+			//  z12-20 - one inch (1:63360)
 			url: '//nls-{s}.tileserver.com/nls/{z}/{x}/{y}.jpg',
 			options: {
 				attribution: '<a href="http://geo.nls.uk/maps/">National Library of Scotland Historic Maps</a>',
 				bounds: [[49.6, -12], [61.7, 3]],
 				minZoom: 1,
-				maxZoom: 18,
+				maxZoom: 20,
 				subdomains: '0123',
 			}
 		}
