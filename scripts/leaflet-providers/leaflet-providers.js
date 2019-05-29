@@ -232,7 +232,7 @@
 					'<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
-				minZoom: 19,
+				minZoom: 10,
 				maxZoom: 30,
 				variant: 'toner',
 				ext: 'png'
