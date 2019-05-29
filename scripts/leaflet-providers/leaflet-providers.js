@@ -232,8 +232,8 @@
 					'<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
-				minZoom: 0,
-				maxZoom: 20,
+				minZoom: 10,
+				maxZoom: 200,
 				variant: 'toner',
 				ext: 'png'
 			},
