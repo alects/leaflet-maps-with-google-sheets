@@ -99,6 +99,13 @@
 	 */
 
 	L.TileLayer.Provider.providers = {
+		UOregon: {
+			url: 'https://gis.uoregon.edu/map/',
+			options: {
+				minZoom: 0,
+				maxZoom: 23
+			}
+		},
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
