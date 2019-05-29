@@ -232,8 +232,8 @@
 					'<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; ' +
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
-				minZoom: 10,
-				maxZoom: 200,
+				minZoom: 0,
+				maxZoom: 20,
 				variant: 'toner',
 				ext: 'png'
 			},
@@ -243,7 +243,13 @@
 				TonerHybrid: 'toner-hybrid',
 				TonerLines: 'toner-lines',
 				TonerLabels: 'toner-labels',
-				TonerLite: 'toner-lite',
+				TonerLite: {
+					options: {
+						variant: 'toner-lite',
+						minZoom: 0,
+						maxZoom: 200
+					}
+				},
 				Watercolor: {
 					options: {
 						variant: 'watercolor',
