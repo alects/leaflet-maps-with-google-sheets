@@ -233,8 +233,7 @@
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
 				minZoom: 0,
-				maxZoom: 20123,
-				bounds: [[44.03863783, -123.0595545], [44.05165773, -123.0811357]]
+				maxZoom: 20,
 				variant: 'toner',
 				ext: 'png'
 			},
