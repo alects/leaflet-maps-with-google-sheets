@@ -99,17 +99,10 @@
 	 */
 
 	L.TileLayer.Provider.providers = {
-		UOregon: {
-			url: 'https://gis.uoregon.edu/map/',
-			options: {
-				minZoom: 0,
-				maxZoom: 23
-			}
-		},
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 25,
+				maxZoom: 19,
 				attribution:
 					'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			},
@@ -118,19 +111,19 @@
 				BlackAndWhite: {
 					url: 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 25
+						maxZoom: 18
 					}
 				},
 				DE: {
 					url: 'http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 25
+						maxZoom: 18
 					}
 				},
 				France: {
 					url: '//{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 25,
+						maxZoom: 20,
 						attribution: '&copy; Openstreetmap France | {attribution.OpenStreetMap}'
 					}
 				},
@@ -151,7 +144,7 @@
 		OpenTopoMap: {
 			url: '//{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 25,
+				maxZoom: 17,
 				attribution: 'Map data: {attribution.OpenStreetMap}, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 			}
 		},
@@ -167,19 +160,19 @@
 				Transport: {
 					options: {
 						variant: 'transport',
-						maxZoom: 25
+						maxZoom: 19
 					}
 				},
 				TransportDark: {
 					options: {
 						variant: 'transport-dark',
-						maxZoom: 25
+						maxZoom: 19
 					}
 				},
 				SpinalMap: {
 					options: {
 						variant: 'spinal-map',
-						maxZoom: 25
+						maxZoom: 11
 					}
 				},
 				Landscape: 'landscape',
@@ -190,7 +183,7 @@
 		OpenMapSurfer: {
 			url: 'http://korona.geog.uni-heidelberg.de/tiles/{variant}/x={x}&y={y}&z={z}',
 			options: {
-				maxZoom: 25,
+				maxZoom: 20,
 				variant: 'roads',
 				attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data {attribution.OpenStreetMap}'
 			},
@@ -199,13 +192,13 @@
 				AdminBounds: {
 					options: {
 						variant: 'adminb',
-						maxZoom: 25
+						maxZoom: 19
 					}
 				},
 				Grayscale: {
 					options: {
 						variant: 'roadsg',
-						maxZoom: 25
+						maxZoom: 19
 					}
 				}
 			}
@@ -240,7 +233,7 @@
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
 				minZoom: 0,
-				maxZoom: 25,
+				maxZoom: 20,
 				variant: 'toner',
 				ext: 'png'
 			},
@@ -255,21 +248,21 @@
 					options: {
 						variant: 'watercolor',
 						minZoom: 1,
-						maxZoom: 25
+						maxZoom: 16
 					}
 				},
 				Terrain: {
 					options: {
 						variant: 'terrain',
 						minZoom: 0,
-						maxZoom: 25
+						maxZoom: 18
 					}
 				},
 				TerrainBackground: {
 					options: {
 						variant: 'terrain-background',
 						minZoom: 0,
-						maxZoom: 25
+						maxZoom: 18
 					}
 				},
 				TopOSMRelief: {
@@ -306,7 +299,7 @@
 					options: {
 						variant: 'Specialty/DeLorme_World_Base_Map',
 						minZoom: 1,
-						maxZoom: 25,
+						maxZoom: 11,
 						attribution: '{attribution.Esri} &mdash; Copyright: &copy;2012 DeLorme'
 					}
 				},
@@ -329,7 +322,7 @@
 				WorldTerrain: {
 					options: {
 						variant: 'World_Terrain_Base',
-						maxZoom: 25,
+						maxZoom: 13,
 						attribution:
 							'{attribution.Esri} &mdash; ' +
 							'Source: USGS, Esri, TANA, DeLorme, and NPS'
@@ -338,7 +331,7 @@
 				WorldShadedRelief: {
 					options: {
 						variant: 'World_Shaded_Relief',
-						maxZoom: 25,
+						maxZoom: 13,
 						attribution: '{attribution.Esri} &mdash; Source: Esri'
 					}
 				},
@@ -352,21 +345,21 @@
 				OceanBasemap: {
 					options: {
 						variant: 'Ocean_Basemap',
-						maxZoom: 25,
+						maxZoom: 13,
 						attribution: '{attribution.Esri} &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri'
 					}
 				},
 				NatGeoWorldMap: {
 					options: {
 						variant: 'NatGeo_World_Map',
-						maxZoom: 25,
+						maxZoom: 16,
 						attribution: '{attribution.Esri} &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC'
 					}
 				},
 				WorldGrayCanvas: {
 					options: {
 						variant: 'Canvas/World_Light_Gray_Base',
-						maxZoom: 25,
+						maxZoom: 16,
 						attribution: '{attribution.Esri} &mdash; Esri, DeLorme, NAVTEQ'
 					}
 				}
@@ -375,7 +368,7 @@
 		OpenWeatherMap: {
 			url: 'http://{s}.tile.openweathermap.org/map/{variant}/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 25,
+				maxZoom: 19,
 				attribution: 'Map data &copy; <a href="http://openweathermap.org">OpenWeatherMap</a>',
 				opacity: 0.5
 			},
@@ -416,7 +409,7 @@
 				'app_code': '<insert your app_code here>',
 				base: 'base',
 				variant: 'normal.day',
-				maxZoom: 25,
+				maxZoom: 20,
 				type: 'maptile',
 				language: 'eng',
 				format: 'png8',
@@ -491,7 +484,7 @@
 			url: 'http://t{s}.freemap.sk/T/{z}/{x}/{y}.jpeg',
 			options: {
 				minZoom: 8,
-				maxZoom: 25,
+				maxZoom: 16,
 				subdomains: '1234',
 				bounds: [[47.204642, 15.996093], [49.830896, 22.576904]],
 				attribution:
@@ -511,7 +504,7 @@
 			options: {
 				attribution: '{attribution.OpenStreetMap} &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 				subdomains: 'abcd',
-				maxZoom: 25,
+				maxZoom: 19,
 				variant: 'light_all'
 			},
 			variants: {
@@ -526,7 +519,7 @@
 		HikeBike: {
 			url: 'http://{s}.tiles.wmflabs.org/{variant}/{z}/{x}/{y}.png',
 			options: {
-				maxZoom: 25,
+				maxZoom: 19,
 				attribution: '{attribution.OpenStreetMap}',
 				variant: 'hikebike'
 			},
@@ -534,7 +527,7 @@
 				HikeBike: {},
 				HillShading: {
 					options: {
-						maxZoom: 25,
+						maxZoom: 15,
 						variant: 'hillshading'
 					}
 				}
@@ -543,7 +536,7 @@
 		BasemapAT: {
 			url: '//maps{s}.wien.gv.at/basemap/{variant}/normal/google3857/{z}/{y}/{x}.{format}',
 			options: {
-				maxZoom: 25,
+				maxZoom: 19,
 				attribution: 'Datenquelle: <a href="www.basemap.at">basemap.at</a>',
 				subdomains: ['', '1', '2', '3', '4'],
 				format: 'png',
@@ -638,7 +631,7 @@
 				attribution: '<a href="http://geo.nls.uk/maps/">National Library of Scotland Historic Maps</a>',
 				bounds: [[49.6, -12], [61.7, 3]],
 				minZoom: 1,
-				maxZoom: 25,
+				maxZoom: 18,
 				subdomains: '0123',
 			}
 		}
