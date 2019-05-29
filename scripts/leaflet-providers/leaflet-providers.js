@@ -243,13 +243,7 @@
 				TonerHybrid: 'toner-hybrid',
 				TonerLines: 'toner-lines',
 				TonerLabels: 'toner-labels',
-				TonerLite: {
-					options: {
-						variant: 'toner-lite',
-						minZoom: 0,
-						maxZoom: 200
-					}
-				},
+				TonerLite: 'toner-lite',
 				Watercolor: {
 					options: {
 						variant: 'watercolor',
