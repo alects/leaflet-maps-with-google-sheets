@@ -513,6 +513,7 @@
      * to a boundary parameter for Leaflet's fitBounds().
      */
     fitBoundingBox: function (bbox) {
+      console.log("Test");
       this._map.fitBounds([
         //[ bbox[1], bbox[0] ],
         //[ bbox[3], bbox[2] ]
