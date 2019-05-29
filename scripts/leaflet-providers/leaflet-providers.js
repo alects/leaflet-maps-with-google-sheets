@@ -123,7 +123,7 @@
 				France: {
 					url: '//{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',
 					options: {
-						maxZoom: 20,
+						maxZoom: 25,
 						attribution: '&copy; Openstreetmap France | {attribution.OpenStreetMap}'
 					}
 				},
@@ -183,7 +183,7 @@
 		OpenMapSurfer: {
 			url: 'http://korona.geog.uni-heidelberg.de/tiles/{variant}/x={x}&y={y}&z={z}',
 			options: {
-				maxZoom: 20,
+				maxZoom: 25,
 				variant: 'roads',
 				attribution: 'Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data {attribution.OpenStreetMap}'
 			},
@@ -233,7 +233,7 @@
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
 				minZoom: 0,
-				maxZoom: 20,
+				maxZoom: 25,
 				variant: 'toner',
 				ext: 'png'
 			},
@@ -409,7 +409,7 @@
 				'app_code': '<insert your app_code here>',
 				base: 'base',
 				variant: 'normal.day',
-				maxZoom: 20,
+				maxZoom: 25,
 				type: 'maptile',
 				language: 'eng',
 				format: 'png8',
