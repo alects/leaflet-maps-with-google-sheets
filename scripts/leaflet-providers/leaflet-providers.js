@@ -233,7 +233,7 @@
 					'Map data {attribution.OpenStreetMap}',
 				subdomains: 'abcd',
 				minZoom: 0,
-				maxZoom: 20,
+				maxZoom: 2000000,
 				variant: 'toner',
 				ext: 'png'
 			},
