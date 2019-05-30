@@ -125,10 +125,40 @@ $(window).on('load', function() {
         );
 
       if (point.Latitude !== '' && point.Longitude !== '') {
-        var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
-          .bindPopup("<b>" + point['Name'] + '</b><br>' +
+        var popupContent = '<form role="form" id="form" enctype="multipart/form-data" class = "form-horizontal" onsubmit="addMarker()">'+
+          '<div class="form-group">'+
+              '<label class="control-label col-sm-5"><strong>Date: </strong></label>'+
+              '<input type="date" placeholder="Required" id="date" name="date" class="form-control"/>'+ 
+          '</div>'+
+          '<div class="form-group">'+
+              '<label class="control-label col-sm-5"><strong>Gender: </strong></label>'+
+              '<select class="form-control" id="gender" name="gender">'+
+                '<option value="Male">Male</option>'+
+                '<option value="Female">Female</option>'+
+                '<option value="Other">Other</option>'+
+              '</select>'+ 
+          '</div>'+
+          '<div class="form-group">'+
+              '<label class="control-label col-sm-5"><strong>Age: </strong></label>'+
+              '<input type="number" min="0" class="form-control" id="age" name="age">'+ 
+          '</div>'+
+          //...
+          '<div class="form-group">'+
+              '<label class="control-label col-sm-5"><strong>Description: </strong></label>'+
+              '<textarea class="form-control" rows="6" id="descrip" name="descript">...</textarea>'+
+          '</div>'+
+          '<input style="display: none;" type="text" id="lat" name="lat" value="'+coords.lat.toFixed(6)+'" />'+
+          '<input style="display: none;" type="text" id="lng" name="lng" value="'+coords.lng.toFixed(6)+'" />'+
+          '<div class="form-group">'+
+            '<div style="text-align:center;" class="col-xs-4 col-xs-offset-2"><button type="button" class="btn">Cancel</button></div>'+
+            '<div style="text-align:center;" class="col-xs-4"><button type="submit" value="submit" class="btn btn-primary trigger-submit">Submit</button></div>'+
+          '</div>'+
+          '</form>';
+        var old = "<b>" + point['Name'] + '</b><br>' +
           (point['Image'] ? ('<img src="' + point['Image'] + '"><br>') : '') +
-          point['Description']);
+          point['Description'];
+        var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
+          .bindPopup(popupContent);
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
