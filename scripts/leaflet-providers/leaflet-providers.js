@@ -104,7 +104,7 @@
 			options: {
 				maxNativeZoom: 23,
 				maxZoom: 28,
-				zoomOffset: 5,
+				zoomOffset: -5,
 				attribution:
 					"<a href='http://infographics.uoregon.edu/services/campus-mapping/' target='_blank'> UOCGIS </a> | <a href='http://leafletjs.com/' target='_blank'>Leaflet</a>"
 			}
