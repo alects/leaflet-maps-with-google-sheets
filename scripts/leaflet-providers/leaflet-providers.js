@@ -107,7 +107,7 @@
 					"<a href='http://infographics.uoregon.edu/services/campus-mapping/' target='_blank'> UOCGIS </a> | <a href='http://leafletjs.com/' target='_blank'>Leaflet</a>"
 			}
 		}
-		/*
+		
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
@@ -644,7 +644,7 @@
 				subdomains: '0123',
 			}
 		}
-		*/
+		
 	};
 
 	L.tileLayer.provider = function (provider, options) {
