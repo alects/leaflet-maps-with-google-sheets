@@ -106,7 +106,8 @@
 				attribution:
 					"<a href='http://infographics.uoregon.edu/services/campus-mapping/' target='_blank'> UOCGIS </a> | <a href='http://leafletjs.com/' target='_blank'>Leaflet</a>"
 			}
-		},
+		}
+		/*
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
@@ -395,15 +396,15 @@
 			}
 		},
 		HERE: {
-			/*
-			 * HERE maps, formerly Nokia maps.
-			 * These basemaps are free, but you need an API key. Please sign up at
-			 * http://developer.here.com/getting-started
-			 *
-			 * Note that the base urls contain '.cit' whichs is HERE's
-			 * 'Customer Integration Testing' environment. Please remove for production
-			 * envirionments.
-			 */
+			 //
+			 // HERE maps, formerly Nokia maps.
+			 // These basemaps are free, but you need an API key. Please sign up at
+			 // http://developer.here.com/getting-started
+			 //
+			 // Note that the base urls contain '.cit' whichs is HERE's
+			 // 'Customer Integration Testing' environment. Please remove for production
+			 // envirionments.
+			 //
 			url:
 				'//{s}.{base}.maps.cit.api.here.com/maptile/2.1/' +
 				'{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?' +
@@ -643,6 +644,7 @@
 				subdomains: '0123',
 			}
 		}
+		*/
 	};
 
 	L.tileLayer.provider = function (provider, options) {
