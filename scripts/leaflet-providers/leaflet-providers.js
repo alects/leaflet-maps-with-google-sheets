@@ -99,6 +99,12 @@
 	 */
 
 	L.TileLayer.Provider.providers = {
+		UOregon: {
+			url: 'https://tiles.uoregon.edu/arcgis/colorwithanno/{z}/{x}/{y}.png',
+			options: {
+				maxZoom: 23
+			}
+		},
 		OpenStreetMap: {
 			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 			options: {
