@@ -54,7 +54,7 @@
       expanded: false,
       autocomplete: true,
       place: false,
-      zoom: 12,
+      zoom: 18,
       circle: false,
       circleRadius: 1,
       searchInsteadAutocomplete: false,
