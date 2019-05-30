@@ -102,7 +102,7 @@
 		UOregon: {
 			url: 'https://tiles.uoregon.edu/arcgis/colorwithanno/{z}/{x}/{y}.png',
 			options: {
-				maxNativeZoom: 23,
+				maxNativeZoom: 30,
 				maxZoom: 30,
 				attribution:
 					"<a href='http://infographics.uoregon.edu/services/campus-mapping/' target='_blank'> UOCGIS </a> | <a href='http://leafletjs.com/' target='_blank'>Leaflet</a>"
